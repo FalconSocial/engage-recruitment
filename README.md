@@ -55,6 +55,6 @@ curl http://localhost:8080/weather?city=Copenhagen&country=dk
 ```
 Or simply hit the endpoint in a browser.
 
-###
+### Internal Guidelines (Only Accessible in Falcon)
 
-Information for interviewers can be found here: https://falconio.atlassian.net/wiki/spaces/NGA/pages/2756313093/Backend+Coding+Exercise.
+https://falconio.atlassian.net/wiki/spaces/NGA/pages/2756313093/Backend+Coding+Exercise.
