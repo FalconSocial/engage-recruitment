@@ -28,7 +28,7 @@ THEN display the following message: "The weather in <city_name> is <temp_word> a
 
 Before the project was completed, Donald left the company. The code he wrote compiles but has not been tested.
 
-You are now taking on the project. You have 2 tasks:
+You are now taking on the project. You have 2 tasks (to be worked on during your interview):
 
 1. Review the code to familiarise yourself with what it does and make any improvements you think are necessary.
 2. Implement an additional feature to get the difference in weather between two cities (see below).
