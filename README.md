@@ -33,6 +33,8 @@ You are now taking on the project. You have 2 tasks:
 1. Review the code to familiarise yourself with what it does and make any improvements you think are necessary.
 2. Implement an additional feature to get the difference in weather between two cities (see below).
 
+Weather data is obtained from the API defined here: https://openweathermap.org/current#data. An API key is required for this and will be provided to you.
+
 ### Additional Feature
 
 GIVEN a city name C1 and a city name C2<br />
@@ -52,3 +54,7 @@ To invoke the app's functionality:
 curl http://localhost:8080/weather?city=Copenhagen&country=dk
 ```
 Or simply hit the endpoint in a browser.
+
+###
+
+Information for interviewers can be found here: https://falconio.atlassian.net/wiki/spaces/NGA/pages/2756313093/Backend+Coding+Exercise.

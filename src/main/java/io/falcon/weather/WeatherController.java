@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("weather")
 public class WeatherController {
 
-    private String apiKey = "87df65e3e78a50fe88eed6b75f42e4f2";
+    private String apiKey = "PUT_API_KEY_HERE";
 
     @Autowired
     private RestTemplate restTemplate;
