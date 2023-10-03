@@ -1,4 +1,4 @@
-package io.falcon.weather;
+package com.brandwatch.weather;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

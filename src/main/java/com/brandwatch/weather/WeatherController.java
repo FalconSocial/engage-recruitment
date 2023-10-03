@@ -1,4 +1,4 @@
-package io.falcon.weather;
+package com.brandwatch.weather;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import org.springframework.beans.factory.annotation.Autowired;

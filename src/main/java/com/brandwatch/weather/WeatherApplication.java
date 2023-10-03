@@ -1,4 +1,4 @@
-package io.falcon.weather;
+package com.brandwatch.weather;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

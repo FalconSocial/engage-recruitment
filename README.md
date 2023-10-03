@@ -1,4 +1,4 @@
-# Falcon Weather App
+# Brandwatch Weather App
 
 ### Overview
 
@@ -55,6 +55,6 @@ curl http://localhost:8080/weather?city=Copenhagen&country=dk
 ```
 Or simply hit the endpoint in a browser.
 
-### Internal Guidelines (Only Accessible in Falcon)
+### Internal Guidelines (Only Accessible by Brandwatchers)
 
-https://falconio.atlassian.net/wiki/spaces/NGA/pages/2756313093/Backend+Coding+Exercise.
+https://brandwatch.atlassian.net/wiki/spaces/NGA/pages/2756313093/Backend+Coding+Exercise.
