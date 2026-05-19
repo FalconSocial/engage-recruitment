@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.util.HtmlUtils;
 
 @RestController
 @RequestMapping("weather")
@@ -25,23 +26,26 @@ public class WeatherController {
         Double h = node.get("main").get("humidity").asDouble();
         double p = node.get("main").get("pressure").asDouble();
 
+        String safeC1 = HtmlUtils.htmlEscape(c1);
+        String safeC2 = HtmlUtils.htmlEscape(c2);
+
         String o = null;
         if (t >= 30 && h < 80) {
-            o = "The weather in " + c1 + ", " + c2 + " is hot and dry!";
+            o = "The weather in " + safeC1 + ", " + safeC2 + " is hot and dry!";
         } else if (t >= 18 && h < 80) {
-            o = "The weather in " + c1 + ", " + c2 + " is warm and dry!";
+            o = "The weather in " + safeC1 + ", " + safeC2 + " is warm and dry!";
         } else if (t >= 5 && h < 80) {
-            o = "The weather in " + c1 + ", " + c2 + " is chilly and dry!";
+            o = "The weather in " + safeC1 + ", " + safeC2 + " is chilly and dry!";
         } else if (t < 5 && h < 80) {
-            o = "The weather in " + c1 + ", " + c2 + " is cold and dry!";
+            o = "The weather in " + safeC1 + ", " + safeC2 + " is cold and dry!";
         } else if (t >= 30 && h >= 80) {
-            o = "The weather in " + c1 + ", " + c2 + " is hot and humid!";
+            o = "The weather in " + safeC1 + ", " + safeC2 + " is hot and humid!";
         } else if (t >= 18 && h >= 80) {
-            o = "The weather in " + c1 + ", " + c2 + " is warm and humid!";
+            o = "The weather in " + safeC1 + ", " + safeC2 + " is warm and humid!";
         } else if (t >= 5 && h >= 80) {
-            o = "The weather in " + c1 + ", " + c2 + " is chilly and humid!";
+            o = "The weather in " + safeC1 + ", " + safeC2 + " is chilly and humid!";
         } else if (t < 5 && h >= 80) {
-            o = "The weather in " + c1 + ", " + c2 + " is cold and humid!";
+            o = "The weather in " + safeC1 + ", " + safeC2 + " is cold and humid!";
         }
 
         return o;
